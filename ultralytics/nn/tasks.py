@@ -274,7 +274,7 @@ class BaseModel(nn.Module):
 class DetectionModel(BaseModel):
     """YOLOv8 detection model."""
 
-    # modify ch=3 to ch=3
+    # modify ch=3 to ch=6
     def __init__(self, cfg="yolov8n.yaml", ch=6, nc=None, verbose=True):  # model, input channels, number of classes
         """Initialize the YOLOv8 detection model with the given config and parameters."""
         super().__init__()
